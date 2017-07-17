@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Sentiment Analysis tool</title>
+
+  <link rel="stylesheet" type="text/css" href="static/style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+      google.charts.load('current', {packages: ['corechart', 'bar']});
+      google.charts.setOnLoadCallback(drawMultSeries);
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+function drawMultSeries() {
+      var data = google.visualization.arrayToDataTable([
+        ['Sentiment', 'Bank consumer'],
+        ['Positive', 1],
+        ['Neutral', 0],
+        ['Negative', 13]
+      ]);
+
+      var options = {
+        title: 'Sentiment Analysis',
+        chartArea: {width: '50%'},
+        hAxis: {
+          title: 'Total',
+          minValue: 0
+        },
+        vAxis: {
+          title: 'Sentiment'
+        }
+      };
+
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+
+    function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Bank', 'Total'],
+          ['Maybank',     8],
+          ['CIMB',      8],
+          ['Hong Leong',  0]
+        ]);
+
+        var options = {
+          title: 'Banks'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+
+<div id="header">
+  <h1 id="logo">Sentiment Analysis tool</h1>
+  <p id="loginlogout"> 
+   
+  </p>
+</div>
+
+<div id="menu">
+  <ul>
+    <li><a href="">About</a>&nbsp;</li>
+  </ul>
+</div>
+  
+<div id="content">
+<form>
+  Search Keyword:
+  <input type="search" name="googlesearch" placeholder="maybank,cimb,hong leong" size="50">
+</form>
+  <h1></h1>
+    <div id="notice">
+    </div>
+
+    <div id="chart_div"></div>
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
+</div>
+
+
+    <div id="shopping_cart">
+    </div>
+    
+
+<div id="footer">
+ &copy; 2017 Nurdin, Hazrin, Azrin
+</div>
+  
+</body>
+</html>
