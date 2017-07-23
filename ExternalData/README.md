@@ -7,7 +7,7 @@ Open twitter_streaming.py, set TWITTER API credentials and setup the keyword(s) 
 python twitter_streaming.py > data/twitter_data.txt
 ```
 
-![twitter streaming](https://raw.githubusercontent.com/datomnurdin/SentimentAnalysis/master/image/image_1.png?token=AFKlMtTyvjelp3FvY5d5nuanwEhTtgYxks5ZcvBLwA%3D%3D)
+![twitter streaming](https://raw.githubusercontent.com/datomnurdin/PredictiveAnalysis/master/ExternalData/image/image_1.png?token=AFKlMvFiJiV5w16jCDDAzG_tWSHexSSKks5ZfXrzwA%3D%3D)
 
 ## Step 2
 
