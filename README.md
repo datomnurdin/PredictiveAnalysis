@@ -26,7 +26,7 @@ Pandas, NumPy, Sklearn, IPython, Google Chart
 ![Demo 2](https://raw.githubusercontent.com/datomnurdin/PredictiveAnalysis/master/image/image_2.png)
 
 ## Presentation
-TBA
+https://github.com/datomnurdin/PredictiveAnalysis/blob/master/UNITEDBYHCL906c2f5.pptx
 
 ## Demo Link
 https://predictive-analysis.herokuapp.com/
