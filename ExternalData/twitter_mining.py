@@ -25,7 +25,6 @@ def review_to_words( raw_review ):
     letters_only = re.sub("[^a-zA-Z]", " ", raw_review) 
     words = letters_only.lower().split()                             
     stops = set(stopwords.words("english"))    
-    stops = set(['ada,inikah,sampai,adakah,inilah,sana,adakan,itu,sangat,adalah,itukah,sangatlah,adanya,itulah,saya,adapun,jadi,se,agak,jangan,seandainya,agar,janganlah,sebab,akan,jika,sebagai,aku,jikalau,sebagaimana,akulah,jua,sebanyak,akupun,juapun,sebelum,al,juga,sebelummu,alangkah,kalau,sebelumnya,allah,kami,sebenarnya,amat,kamikah,secara,antara,kamipun,sedang,antaramu,kamu,sedangkan,antaranya,kamukah,sedikit,apa,kamupun,sedikitpun,apa-apa,katakan,segala,apabila,ke,sehingga,apakah,kecuali,sejak,apapun,kelak,sekalian,atas,kembali,sekalipun,atasmu,kemudian,sekarang,atasnya,kepada,sekitar,atau,kepadaku,selain,ataukah,kepadakulah,selalu,ataupun,kepadamu,selama,bagaimana,kepadanya,selama-lamanya,bagaimanakah,kepadanyalah,seluruh,bagi,kerana,seluruhnya,bagimu,kerananya,sementara,baginya,kesan,semua,bahawa,ketika,semuanya,bahawasanya,kini,semula,bahkan,kita,senantiasa,bahwa,ku,sendiri,banyak,kurang,sentiasa,banyaknya,lagi,seolah,barangsiapa,lain,seolah-olah,bawah,lalu,seorangpun,beberapa,lamanya,separuh,begitu,langsung,sepatutnya,begitupun,lebih,seperti,belaka,maha,seraya,belum,mahu,sering,belumkah,mahukah,serta,berada,mahupun,seseorang,berapa,maka,sesiapa,berikan,malah,sesuatu,beriman,mana,sesudah,berkenaan,manakah,sesudahnya,berupa,manapun,sesungguhnya,beserta,masih,sesungguhnyakah,biarpun,masing,setelah,bila,masing-masing,setiap,bilakah,melainkan,siapa,bilamana,memang,siapakah,bisa,mempunyai,sini,boleh,mendapat,situ,bukan,mendapati,situlah,bukankah,mendapatkan,suatu,bukanlah,mengadakan,sudah,dahulu,mengapa,sudahkah,dalam,mengapakah,sungguh,dalamnya,mengenai,sungguhpun,dan,menjadi,supaya,dapat,menyebabkan,tadinya,dapati,menyebabkannya,tahukah,dapatkah,mereka,tak,dapatlah,merekalah,tanpa,dari,merekapun,tanya,daripada,meskipun,tanyakanlah,daripadaku,mu,tapi,daripadamu,nescaya,telah,daripadanya,niscaya,tentang,demi,nya,tentu,demikian,olah,terdapat,demikianlah,oleh,terhadap,dengan,orang,terhadapmu,dengannya,pada,termasuk,di,padahal,terpaksa,dia,padamu,tertentu,dialah,padanya,tetapi,didapat,paling,tiada,didapati,para,tiadakah,dimanakah,pasti,tiadalah,engkau,patut,tiap,engkaukah,patutkah,tiap-tiap,engkaulah,per,tidak,engkaupun,pergilah,tidakkah,hai,perkara,tidaklah,hampir,perkaranya,turut,hampir-hampir,perlu,untuk,hanya,pernah,untukmu,hanyalah,pertama,wahai,hendak,pula,walau,hendaklah,pun,walaupun,hingga,sahaja,ya,ia,saja,yaini,iaitu,saling,yaitu,ialah,sama,yakni,ianya,sama-sama,yang,inginkah,samakah,ini,sambil'])
     meaningful_words = [w for w in words if not w in stops]  
     filtered_words = [stem(word) for word in meaningful_words if word not in stops]
     return( " ".join( filtered_words ))
@@ -67,16 +66,16 @@ ax.set_ylabel('Number of tweets' , fontsize=15)
 ax.set_title('Top 5 countries', fontsize=15, fontweight='bold')
 tweets_by_country[:5].plot(ax=ax, kind='bar', color='blue')
 
-tweets['maybank'] = tweets['text'].apply(lambda tweet: word_in_text('maybank', tweet))
-tweets['cimb'] = tweets['text'].apply(lambda tweet: word_in_text('cimb', tweet))
-tweets['hong leong'] = tweets['text'].apply(lambda tweet: word_in_text('hong leong', tweet))
+tweets['dhl'] = tweets['text'].apply(lambda tweet: word_in_text('dhl', tweet))
+tweets['usps'] = tweets['text'].apply(lambda tweet: word_in_text('usps', tweet))
+tweets['fedex'] = tweets['text'].apply(lambda tweet: word_in_text('fedex', tweet))
 
-print tweets['maybank'].value_counts()[True]
-print tweets['cimb'].value_counts()[True]
-print tweets['hong leong'].value_counts()[True]
+print tweets['dhl'].value_counts()[True]
+print tweets['usps'].value_counts()[True]
+print tweets['fedex'].value_counts()[True]
 
-prg_langs = ['maybank', 'cimb', 'hong leong']
-tweets_by_prg_lang = [tweets['maybank'].value_counts()[True], tweets['cimb'].value_counts()[True], tweets['hong leong'].value_counts()[True]]
+prg_langs = ['dhl', 'usps', 'fedex']
+tweets_by_prg_lang = [tweets['dhl'].value_counts()[True], tweets['usps'].value_counts()[True], tweets['fedex'].value_counts()[True]]
 
 x_pos = list(range(len(prg_langs)))
 width = 0.8
@@ -84,7 +83,7 @@ fig, ax = plt.subplots()
 plt.bar(x_pos, tweets_by_prg_lang, width, alpha=1, color='g')
 
 ax.set_ylabel('Number of tweets', fontsize=15)
-ax.set_title('Ranking: maybank vs. cimb vs. hong leong (Raw data)', fontsize=10, fontweight='bold')
+ax.set_title('Ranking: dhl vs. usps vs. fedex (Raw data)', fontsize=10, fontweight='bold')
 ax.set_xticks([p + 0.4 * width for p in x_pos])
 ax.set_xticklabels(prg_langs)
 plt.grid()
