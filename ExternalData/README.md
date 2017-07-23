@@ -29,7 +29,7 @@ Run this command to create testing data in CSV format.
 python twitter_testing.py
 ```
 
-![twitter testing](https://raw.githubusercontent.com/datomnurdin/SentimentAnalysis/master/image/image_3.png?token=AFKlMig6XNi3FksEPmM9MTl2aM7A3pTDks5Zcv3fwA%3D%3D)
+![twitter testing](https://raw.githubusercontent.com/datomnurdin/PredictiveAnalysis/master/ExternalData/image/image_3.png)
 
 ## Step 5
 
@@ -38,10 +38,10 @@ Run this command to predict the result. We are using Random Forest classifier fo
 python twitter_mining.py
 ```
 
-![twitter mining](https://raw.githubusercontent.com/datomnurdin/SentimentAnalysis/master/image/image_4.png?token=AFKlMt07bP8JeTZ2sY_kWO81dVN-lPq9ks5ZcwCswA%3D%3D)
+![twitter mining](https://raw.githubusercontent.com/datomnurdin/PredictiveAnalysis/master/ExternalData/image/image_4.png)
 
 ## Step 6
 
-Open home.html or https://morning-taiga-89287.herokuapp.com/ to see the result.
+Open https://predictive-analysis.herokuapp.com/ to see the result.
 
-![data visualization](https://raw.githubusercontent.com/datomnurdin/SentimentAnalysis/master/image/image_5.png?token=AFKlMqoRAP7wM_eqhZZALaz5JLQzsr7Iks5Zc0tvwA%3D%3D)
+![data visualization](https://raw.githubusercontent.com/datomnurdin/PredictiveAnalysis/master/image/image_2.png)
