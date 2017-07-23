@@ -20,7 +20,7 @@ Run this command to train the data. Enter 1 for positive, -1 for negative and 0 
 python twitter_training.py
 ```
 
-![twitter training](https://raw.githubusercontent.com/datomnurdin/SentimentAnalysis/master/image/image_2.png?token=AFKlMjIvOo0xZAIBhcYBZJohh4dmc291ks5ZcvdRwA%3D%3D)
+![twitter training](https://raw.githubusercontent.com/datomnurdin/PredictiveAnalysis/master/ExternalData/image/image_2.png)
 
 ## Step 4
 
