@@ -15,7 +15,7 @@
 
 function drawMultSeries() {
       var data = google.visualization.arrayToDataTable([
-        ['Sentiment', 'Bank consumer'],
+        ['Sentiment', 'Logistic consumers'],
         ['Positive', 1],
         ['Neutral', 0],
         ['Negative', 13]
@@ -40,10 +40,10 @@ function drawMultSeries() {
     function drawChart() {
 
         var data = google.visualization.arrayToDataTable([
-          ['Bank', 'Total'],
-          ['Maybank',     8],
-          ['CIMB',      8],
-          ['Hong Leong',  0]
+          ['Logistic', 'Total'],
+          ['DHL',     8],
+          ['USPS',      8],
+          ['FedEx',  0]
         ]);
 
         var options = {
@@ -59,7 +59,7 @@ function drawMultSeries() {
 <body>
 
 <div id="header">
-  <h1 id="logo">Sentiment Analysis tool</h1>
+  <h1 id="logo">Predictive Analysis tool</h1>
   <p id="loginlogout"> 
    
   </p>
@@ -74,7 +74,7 @@ function drawMultSeries() {
 <div id="content">
 <form>
   Search Keyword:
-  <input type="search" name="googlesearch" placeholder="maybank,cimb,hong leong" size="50">
+  <input type="search" name="googlesearch" placeholder="DHL,USPS,FedEx" size="50">
 </form>
   <h1></h1>
     <div id="notice">
@@ -90,7 +90,7 @@ function drawMultSeries() {
     
 
 <div id="footer">
- &copy; 2017 Nurdin, Hazrin, Azrin
+ &copy; 2017 Nurdin, Esa, Azrin
 </div>
   
 </body>
