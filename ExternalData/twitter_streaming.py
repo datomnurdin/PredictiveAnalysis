@@ -29,5 +29,5 @@ if __name__ == '__main__':
     auth.set_access_token(access_token, access_token_secret)
     stream = Stream(auth, l)
 
-    #This line filter Twitter Streams to capture data by the keywords: 'maybank', 'cimb', 'hong leong'
-    stream.filter(track=['maybank', 'cimb', 'hong leong'])
+    #This line filter Twitter Streams to capture data by the keywords: 'DHL','UPS','FedEx'
+    stream.filter(track=['DHL','UPS','FedEx'])
