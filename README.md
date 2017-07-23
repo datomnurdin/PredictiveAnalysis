@@ -7,6 +7,7 @@
 ## Project Theme 
 
 ## Built With 
+Pandas, NumPy, Sklearn, IPython, Google Chart
 
 ## Snapshots
 
