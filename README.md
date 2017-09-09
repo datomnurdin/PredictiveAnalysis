@@ -34,6 +34,6 @@ https://predictive-analysis.herokuapp.com/
 ## Instructions to Run
 Classification >> https://github.com/datomnurdin/PredictiveAnalysis/blob/master/InternalData/classify.ipynb
 
-Clustering >> https://github.com/datomnurdin/PredictiveAnalysis/blob/master/InternalData/cluster.ipynb
+Clustering >> https://github.com/datomnurdin/PredictiveAnalysis/blob/master/InternalData/Customer-country_data_5-5_Total-Net-Revenue.csv.ipynb
 
 Sentiment Analysis >> https://github.com/datomnurdin/PredictiveAnalysis/blob/master/ExternalData/README.md
