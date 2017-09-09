@@ -14,7 +14,7 @@
       <input type="checkbox" id="nav-menu-btn" />
       <label for="nav-menu-btn"></label>
       <ul>
-        <li><a href="#">Instructions</a></li>
+        <li><a target="_blank" href="https://raw.githubusercontent.com/datomnurdin/PredictiveAnalysis/master/README.md">Instructions</a></li>
       </ul>
     </nav>
     <main class="container-fluid">
@@ -134,7 +134,8 @@
               <h2>User satisfaction</h2>
             </header>
             <main>
-              <img class="responsive" src="chart.svg" alt="Chart" />
+              <div id="chart_div"></div>
+              <div id="piechart" style="width: 100%;"></div>
             </main>
             <footer>
               <time>2017-09-15 12:21 UTC</time>
@@ -153,4 +154,53 @@
       </p>
     </footer>
   </body>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+      google.charts.load('current', {packages: ['corechart', 'bar']});
+      google.charts.setOnLoadCallback(drawMultSeries);
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+function drawMultSeries() {
+      var data = google.visualization.arrayToDataTable([
+        ['Sentiment', 'Logistic consumers'],
+        ['Positive', 3],
+        ['Neutral', 108],
+        ['Negative', 35]
+      ]);
+
+      var options = {
+        title: 'Sentiment Analysis',
+        chartArea: {width: '50%'},
+        hAxis: {
+          title: 'Total',
+          minValue: 0
+        },
+        vAxis: {
+          title: 'Sentiment'
+        }
+      };
+
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+
+    function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Logistic', 'Total'],
+          ['DHL',     4],
+          ['USPS',      70],
+          ['FedEx',  70]
+        ]);
+
+        var options = {
+          title: 'Logistic'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
 </html>
