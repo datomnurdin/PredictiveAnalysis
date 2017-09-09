@@ -1,113 +1,156 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"> 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>DHL - Predictive Analysis tool</title>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DHL - Analytical Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.min.css">
+  </head>
+  <body>
+    <header>
+      <h1>DHL - Analytical Dashboard</h1>
+    </header>
+    <nav>
+      <input type="checkbox" id="nav-menu-btn" />
+      <label for="nav-menu-btn"></label>
+      <ul>
+        <li><a href="#">Instructions</a></li>
+      </ul>
+    </nav>
+    <main class="container-fluid">
+      <div class="row">
 
-  <link rel="stylesheet" type="text/css" href="static/style.css">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script>
-      google.charts.load('current', {packages: ['corechart', 'bar']});
-      google.charts.setOnLoadCallback(drawMultSeries);
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="panel">
+            <header>
+              <h2>Time Spent Selling</h2>
+            </header>
+            <main>
+              <h3>8.8<sub>hours per week</sub></h3>
+            </main>
+            <footer>
+              <time>2017-09-15 12:21 UTC</time>
+            </footer>
+          </div>
+        </div>
 
-function drawMultSeries() {
-      var data = google.visualization.arrayToDataTable([
-        ['Sentiment', 'Logistic consumers'],
-        ['Positive', 3],
-        ['Neutral', 108],
-        ['Negative', 35]
-      ]);
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="panel">
+            <header>
+              <h2>Opportunity Win Rate</h2>
+            </header>
+            <main>
+              <h3>0.1<sub>%</sub></h3>
+            </main>
+            <footer>
+              <time>2017-09-15 12:21 UTC</time>
+            </footer>
+          </div>
+        </div>
 
-      var options = {
-        title: 'Sentiment Analysis',
-        chartArea: {width: '50%'},
-        hAxis: {
-          title: 'Total',
-          minValue: 0
-        },
-        vAxis: {
-          title: 'Sentiment'
-        }
-      };
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <div class="panel info">
+            <header>
+              <h2>Sales cycle metrics</h2>
+            </header>
+            <main>
+              <h3>1 month</h3>
+            </main>
+            <footer>
+              <time>2017-09-15 12:21 UTC</time>
+            </footer>
+          </div>
+        </div>
 
-      var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
-      chart.draw(data, options);
-    }
+      </div>
 
-    function drawChart() {
+      <div class="row">
 
-        var data = google.visualization.arrayToDataTable([
-          ['Logistic', 'Total'],
-          ['DHL',     4],
-          ['USPS',      70],
-          ['FedEx',  70]
-        ]);
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <div class="panel info">
+            <header>
+              <h2>Sales volume by location, channel, or territory</h2>
+            </header>
+            <main>
+              <h3>UK & US</h3>
+            </main>
+            <footer>
+              <time>2017-09-15 12:21 UTC</time>
+            </footer>
+          </div>
+        </div>
 
-        var options = {
-          title: 'Logistic'
-        };
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="panel">
+            <header>
+              <h2>Average deal size</h2>
+            </header>
+            <main>
+              <h3>30</h3>
+            </main>
+            <footer>
+              <time>2017-09-15 12:21 UTC</time>
+            </footer>
+          </div>
+        </div>
 
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="panel">
+            <header>
+              <h2>Cost of Sales to Revenue Ratio</h2>
+            </header>
+            <main>
+              <h3>3:4</h3>
+            </main>
+            <footer>
+              <time>2017-09-15 12:21 UTC</time>
+            </footer>
+          </div>
+        </div>
 
-        chart.draw(data, options);
-      }
-    </script>
-</head>
-<body>
+        
 
-<div id="header">
-  <h1 id="logo">DHL - Predictive Analysis tool</h1>
-  <p id="loginlogout"> 
-   
-  </p>
-</div>
+      </div>
 
-<div id="menu">
-  <ul>
-    <li><a href="">About</a>&nbsp;</li>
-  </ul>
-</div>
-  
-<div id="content">
+      <div class="row">
 
-<fieldset>
-<h2>Classification Analysis based on Opportunities</h2>
-<p><strong>Explaination:</strong> <a href="https://github.com/datomnurdin/PredictiveAnalysis/blob/master/InternalData/classify.ipynb" target="_blank">https://github.com/datomnurdin/PredictiveAnalysis/blob/master/InternalData/classify.ipynb</a></p>
-<p><strong>Finding & Analysis:</strong> N/A</p>
-</fieldset>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <div class="panel double success">
+            <header>
+              <h2>Specific action metrics</h2>
+            </header>
+            <main>
+              <img class="responsive" src="chart.svg" alt="Chart" />
+            </main>
+            <footer>
+              <time>2017-09-15 12:21 UTC</time>
+            </footer>
+          </div>
+        </div>
 
-<fieldset>
-<h2>Principal Component Analysis (Clustering Analysis) based on KPI (Total Net Revenue)</h2>
-  <img src="InternalData/image/image_2.png">
-  <p><strong>Explaination:</strong> <a href="https://github.com/datomnurdin/PredictiveAnalysis/blob/master/InternalData/cluster.ipynb" target="_blank">https://github.com/datomnurdin/PredictiveAnalysis/blob/master/InternalData/cluster.ipynb</a></p>
-  <p><strong>Finding & Analysis: </strong> Group customers by how similar their total net revenue in each month are. By doing so we uncovered some interesting relationships and, most importantly, better understood the customer situation regarding this important revenue. We saw how most customers improved in the time lapse we considered, but we were also able to discover a group of customers with a high prevalence of the revenue that, far from improving their situation, are increasing the total net revenue.</p>
-</fieldset>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <div class="panel double success">
+            <header>
+              <h2>User satisfaction</h2>
+            </header>
+            <main>
+              <img class="responsive" src="chart.svg" alt="Chart" />
+            </main>
+            <footer>
+              <time>2017-09-15 12:21 UTC</time>
+            </footer>
+          </div>
+        </div>
 
-<fieldset>
-<form>
-<h2>Sentiment Analysis based on Twitter</h2>
-  Search Keyword:
-  <input type="search" name="googlesearch" placeholder="DHL,USPS,FedEx" size="50">
-</form>
+      </div>
 
-
-    <div id="chart_div"></div>
-    <div id="piechart" style="width: 900px; height: 500px;"></div>
-    <p><strong>Explaination:</strong><a href="https://github.com/datomnurdin/PredictiveAnalysis/blob/master/ExternalData/sentiment.ipynb" target="_blank">https://github.com/datomnurdin/PredictiveAnalysis/blob/master/ExternalData/sentiment.ipynb</a></p>
-    <p><strong>Finding & Analysis:</strong> </p>
-</fieldset>
-</div>
-
-    <div id="shopping_cart">
-    </div>
-    
-
-<div id="footer">
- &copy; 2017 Nurdin, Esa, Azrin
-</div>
-  
-</body>
+    </main>
+    <footer>
+      <p>
+        <small>
+        DevilYouKnow
+        </small>
+      </p>
+    </footer>
+  </body>
 </html>
