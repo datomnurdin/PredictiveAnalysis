@@ -30,8 +30,8 @@ https://github.com/datomnurdin/PredictiveAnalysis/blob/master/UNITEDBYHCL906c2f5
 https://predictive-analysis.herokuapp.com/
  
 ## Build and Deployment Instructions to Run
-Classification >> https://github.com/datomnurdin/PredictiveAnalysis/blob/master/InternalData/Opportunity.ipynb
+Specific action metrics (suggestion) (Classification) >> https://github.com/datomnurdin/PredictiveAnalysis/blob/master/InternalData/Opportunity.ipynb
 
-Clustering >> https://github.com/datomnurdin/PredictiveAnalysis/blob/master/InternalData/Customer-country_data_5-5_Total-Net-Revenue.csv.ipynb
+Total Net Revenue (mil) (Clustering) >> https://github.com/datomnurdin/PredictiveAnalysis/blob/master/InternalData/Customer-country_data_5-5_Total-Net-Revenue.csv.ipynb
 
 Sentiment Analysis >> https://github.com/datomnurdin/PredictiveAnalysis/blob/master/ExternalData/README.md
