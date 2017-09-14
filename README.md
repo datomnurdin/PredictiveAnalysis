@@ -30,7 +30,7 @@ https://github.com/datomnurdin/PredictiveAnalysis/blob/master/UNITEDBYHCL906c2f5
 https://predictive-analysis.herokuapp.com/
  
 ## Build and Deployment Instructions to Run
-Opportunity Winning & Lossing Rate (Classification) >> https://github.com/datomnurdin/PredictiveAnalysis/blob/master/InternalData/README.md#classification-analysis---total-net-revenue
+Opportunity Winning & Lossing Rate (Classification) >> https://github.com/datomnurdin/PredictiveAnalysis/blob/master/InternalData/README.md#classification-analysis---opportunity-winning--lossing-rate
 
 Total Net Revenue (mil) (Clustering) >> https://github.com/datomnurdin/PredictiveAnalysis/blob/master/InternalData/Customer-country_data_5-5_Total-Net-Revenue.csv.ipynb
 
