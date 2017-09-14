@@ -42,4 +42,4 @@ python twitter_mining.py
 
 ## Step 6
 
-Open https://predictive-analysis.herokuapp.com/ to see the result.
+Update into .json file.
