@@ -1,4 +1,4 @@
-# Classification Analysis - Total Net Revenue
+# Classification Analysis - 
 
 ## Step 1
 
@@ -26,3 +26,13 @@ Get the file generated result.csv (https://github.com/datomnurdin/PredictiveAnal
 ## Step 5
 
 Update into .json file.
+
+# Clustering - Total Net Revenue
+
+## Step 1
+
+## Step 2
+
+## Step 3
+
+## Step 4
