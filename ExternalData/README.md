@@ -43,5 +43,3 @@ python twitter_mining.py
 ## Step 6
 
 Open https://predictive-analysis.herokuapp.com/ to see the result.
-
-![data visualization](https://raw.githubusercontent.com/datomnurdin/PredictiveAnalysis/master/image/image_2.png)
