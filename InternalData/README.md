@@ -1,4 +1,4 @@
-# Classification Analysis
+# Classification Analysis - Total Net Revenue
 
 ## Step 1
 
