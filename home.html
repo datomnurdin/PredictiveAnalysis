@@ -120,7 +120,7 @@
               <h2>Specific action metrics</h2>
             </header>
             <main>
-              <img class="responsive" src="chart.svg" alt="Chart" />
+              <div id="regions_div" style="width: 100%;"></div>
             </main>
             <footer>
               <time>2017-09-15 12:21 UTC</time>
@@ -155,6 +155,32 @@
     </footer>
   </body>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+      google.charts.load('current', {
+        'packages':['geochart'],
+        // Note: you will need to get a mapsApiKey for your project.
+        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+        'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Popularity'],
+          ['Brazil', 200],
+          ['China', 300],
+          ['Spain', 400],
+          ['UK', 500],
+          ['USA', 600]
+        ]);
+
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
     <script>
       google.charts.load('current', {packages: ['corechart', 'bar']});
       google.charts.setOnLoadCallback(drawMultSeries);
@@ -203,4 +229,5 @@ function drawMultSeries() {
         chart.draw(data, options);
       }
     </script>
+
 </html>
