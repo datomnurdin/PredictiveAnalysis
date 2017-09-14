@@ -23,7 +23,7 @@
         <div class="col-xs-12 col-sm-6 col-md-3">
           <div class="panel">
             <header>
-              <h2>Average Time Spent Selling</h2>
+              <h2>Sales cycle metrics</h2>
             </header>
             <main>
               <h3>7<sub>months</sub></h3>
@@ -34,51 +34,7 @@
           </div>
         </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <div class="panel">
-            <header>
-              <h2>Opportunity Win Rate</h2>
-            </header>
-            <main>
-              <h3>31<sub>%</sub></h3>
-            </main>
-            <footer>
-              <time>2017-09-15 12:21 UTC</time>
-            </footer>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-6">
-          <div class="panel info">
-            <header>
-              <h2>Sales cycle metrics</h2>
-            </header>
-            <main>
-              <h3>7 months</h3>
-            </main>
-            <footer>
-              <time>2017-09-15 12:21 UTC</time>
-            </footer>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="row">
-
-        <div class="col-xs-12 col-sm-12 col-md-6">
-          <div class="panel info">
-            <header>
-              <h2>Sales volume by location, channel, or territory</h2>
-            </header>
-            <main>
-              <h2>Brazil, China, Spain, UK & USA</h2>
-            </main>
-            <footer>
-              <time>2017-09-15 12:21 UTC</time>
-            </footer>
-          </div>
-        </div>
+        
 
         <div class="col-xs-12 col-sm-6 col-md-3">
           <div class="panel">
@@ -94,8 +50,96 @@
           </div>
         </div>
 
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <div class="panel info">
+            <header>
+              <h2>Sales volume by location, channel, or territory</h2>
+            </header>
+            <main>
+              <h2>Brazil, China, Spain, UK & USA</h2>
+            </main>
+            <footer>
+              <time>2017-09-15 12:21 UTC</time>
+            </footer>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <div class="panel double success">
+            <header>
+              <h2>Specific action metrics (suggestion)</h2>
+            </header>
+            <main>
+              <table class="table" width="100%">
+    <thead>
+      <tr>
+        <th>Company Name</th>
+        <th>Opportunity Winning Rate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>FORD MOTOR - USA</td>
+        <td style="text-align: center;">30%</td>
+      </tr>
+      <tr>
+        <td>UNILEVER - CHINA</td>
+        <td style="text-align: center;">100%</td>
+      </tr>
+      <tr>
+        <td>UNILEVER - BRAZIL</td>
+        <td style="text-align: center;">100%</td>
+      </tr>
+      <tr>
+        <td>UNILEVER - SPAIN</td>
+        <td style="text-align: center;">30%</td>
+      </tr>
+      
+    </tbody>
+    <thead>
+      <tr>
+        <th>Company Name</th>
+        <th>Opportunity Lossing Rate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>FORD MOTOR - UK</td>
+        <td style="text-align: center;">30%</td>
+      </tr>
+      <tr>
+        <td>FORD MOTOR - CHINA</td>
+        <td style="text-align: center;">100%</td>
+      </tr>
+    </tbody>
+  </table>
+            </main>
+            <footer>
+              <time>2017-09-15 12:21 UTC</time>
+            </footer>
+          </div>
+        </div>
+
         <div class="col-xs-12 col-sm-6 col-md-3">
-          <div class="panel">
+          <div class="panel double">
+            <header>
+              <h2>Opportunity Win Rate</h2>
+            </header>
+            <main>
+              <h3>31<sub>%</sub></h3>
+            </main>
+            <footer>
+              <time>2017-09-15 12:21 UTC</time>
+            </footer>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="panel double">
             <header>
               <h2>Cost of Sales to Revenue Ratio</h2>
             </header>
@@ -108,8 +152,6 @@
           </div>
         </div>
 
-        
-
       </div>
 
       <div class="row">
@@ -117,7 +159,7 @@
         <div class="col-xs-12 col-sm-12 col-md-6">
           <div class="panel double success">
             <header>
-              <h2>Specific action metrics</h2>
+              <h2>Total Net Revenue (mil)</h2>
             </header>
             <main>
               <div id="regions_div" style="width: 100%;"></div>
@@ -131,7 +173,7 @@
         <div class="col-xs-12 col-sm-12 col-md-6">
           <div class="panel double success">
             <header>
-              <h2>User satisfaction</h2>
+              <h2>Sentiment Analysis</h2>
             </header>
             <main>
               <div id="chart_div"></div>
@@ -166,12 +208,12 @@
 
       function drawRegionsMap() {
         var data = google.visualization.arrayToDataTable([
-          ['Country', 'Popularity'],
-          ['Brazil', 200],
-          ['China', 300],
-          ['Spain', 400],
-          ['UK', 500],
-          ['USA', 600]
+          ['Country', 'Total Net Revenue (mil)'],
+          ['Brazil', 235],
+          ['China', 87],
+          ['Spain', 93],
+          ['UK', 229],
+          ['USA', 551]
         ]);
 
         var options = {};
