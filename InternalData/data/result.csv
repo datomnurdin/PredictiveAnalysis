@@ -1,21 +1,21 @@
-Opp No,Status
-A2SECX,3. Potential Opps
-226704,2. Opportunity
-232797,2. Opportunity
-232798,2. Opportunity
-234652,3. Potential Opps
-241002,2. Opportunity
-240975,3. Potential Opps
-241250,3. Potential Opps
-245224,3. Potential Opps
-251201,2. Opportunity
-251284,3. Potential Opps
-257279,3. Potential Opps
-260295,3. Potential Opps
-261857,3. Potential Opps
-261902,2. Opportunity
-261903,7. Cancelled
-262270,3. Potential Opps
-262845,2. Opportunity
-262961,3. Potential Opps
-264596,3. Potential Opps
+Opp No,Status,Compare,Correct
+262845,2. Opportunity,2. Opportunity,N
+262956,3. Potential Opps,4. Early Lead,N
+262961,3. Potential Opps,2. Opportunity,N
+263114,3. Potential Opps,1. Gain,Y
+263142,3. Potential Opps,2. Opportunity,N
+263146,3. Potential Opps,4. Early Lead,N
+263495,7. Cancelled,7. Cancelled,N
+264585,3. Potential Opps,2. Opportunity,N
+264596,3. Potential Opps,3. Potential Opps,N
+9NHDWC,3. Potential Opps,2. Opportunity,N
+9V52SQ,1. Gain,1. Gain,Y
+9V5HUE,1. Gain,1. Gain,Y
+9VBFVG,2. Opportunity,2. Opportunity,N
+9WG2RW,3. Potential Opps,5. Lost,N
+9XY2SC,3. Potential Opps,2. Opportunity,N
+9YG5FC,7. Cancelled,5. Lost,N
+9Z6FYM,2. Opportunity,2. Opportunity,N
+A2SECX,3. Potential Opps,1. Gain,Y
+A4THP4,3. Potential Opps,2. Opportunity,N
+A54GJ8,3. Potential Opps,2. Opportunity,N
