@@ -17,7 +17,7 @@ Moving forward, SalesMax.ai is able to contribute significantly to its primary s
 Artificial Intelligence >> Predictive Analysis
 
 ## Built With 
-Pandas, NumPy, Sklearn, IPython, Google Chart, Heroku
+Pandas, NumPy, Sklearn, IPython, Google Chart, Heroku, Beautiful Soup
 
 ## Snapshots
 
