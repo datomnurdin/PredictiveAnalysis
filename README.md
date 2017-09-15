@@ -24,7 +24,7 @@ Pandas, NumPy, Sklearn, IPython, Google Chart, Heroku, IBM Bluemix (Personality 
 ![Demo 1](https://raw.githubusercontent.com/datomnurdin/PredictiveAnalysis/master/images/image_1.png)
 
 ## Presentation
-https://github.com/datomnurdin/PredictiveAnalysis/blob/master/UNITEDBYHCL906c2f5.pptx
+https://github.com/datomnurdin/PredictiveAnalysis/blob/master/UNITEDBYHCL906c2f5-2.pptx
 
 ## Demo Link
 https://predictive-analysis.herokuapp.com/
